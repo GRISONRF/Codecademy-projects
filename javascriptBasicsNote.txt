@@ -1,0 +1,195 @@
+ Variable is a named location for storing a value.
+The value we are storing will have a "type"
+
+----------
+
+var elements = document.getElementsByClassName("title") is an example of calling a function.
+it grabs any "elements" or components from a webpage that have a class name "title" and saves them in a vabiable called 'elements'
+functions are the prime mechanism with which you will manipulate data.
+
+// this function has one simple operation: it returns 1
+function returnOne() {
+  return 1;
+}
+
+// this part is similar to what happens when you click 'Run Tests'
+var result = returnOne();
+console.log(result); // should log 1 to the console
+
+functions always return a value
+if we dont tell the function what to reaturn it will return undefined
+
+-----
+
+booleans are a logical value type
+booleans can be true or false
+
+----
+
+Numbers can be positive, negative, an integer or a floading-point(decimal)
+Has 3 symbolic numbers: +Infinity, -Infinity and NaN(not-a-number
+
+-----
+
+anyOddNumber % 2 will always evaluate to 1
+anyEvenNumber % 2 will always evaluate to 0
+
+------
+
+When referring to the function, PARAMETER is what the function "takes", and when we are calling the function, we use ARGUMENTS to call it. 
+
+-----
+
+strings indexes starts at 0
+string does not need to have anything in it to be consideres a string
+strings are immutable and cannot change once they are created, but we can reassign a value for them
+
+------
+
+the array "object" is used to store an ordered list of multiple values in a single variable
+aray indexes are zero-based (starts at 0)
+arrays are considered objects in JS
+arrays are mutable and is as simple as making an assignment using the = operator:
+doesnt need to have anything to be considered an array (eg. emptyArray = []; )
+
+
+
+ARRAY = ['a',2]
+OBJECT ={a:2}
+both are mutable
+-
+
+object is a collection of properties
+a property is an association between a name(key) and a value(some data type)
+when the value of a propertie is a function, this object is called a mathod.
+// first let us look at an object with boolean values
+var booleanObj = {
+  isObject: true,
+  isString: false
+}
+An object does not need to have any properties to still be considered an object
+To access the obj property we can use bracket notarion or dot notation. eg:
+object['b'];
+object.b;
+
+
+examples of an operator (typeof) and a method (Array.isArray()). Operators and Methods will allow us to build on top of our foundation of data types and functions
+
+-------
+
+
+operator is used to perform specific computations or operations on operands
+like: = + - typeof
+they can be unary {operator} {operand} (e.g. typeof "username"), or binary: {operand1} {operator} {operand2} (e.g. 4 + 5)
+
+--
+
+method is a function that is a property of an object
+eg console.log() and Array.isArray()
+
+------
+|| operator = OR
+if at least ONE of them is TRUE
+
+&& operator = AND
+when BOTH of them are TRUE
+
+=== operator COMPARES two scalar values directly
+works with undefined, booleans, numbers and strings
+the opposite is !== 
+
+Falsy values:
+false
+0
+""
+null
+undefined
+NaN
+
+Math.abs() = absolute value of a number, the number on POSITIVE
+Math.ceil() round a number up
+Math.floor() round a number down
+Number.parseInt() and Number.parseFloat() to "parse" an interger, get a string version of the number and get an actual number (from "2" to 2)
+Math.random() to genarate a random number between 0 and 1, can be 0 but never 1.
+ex: var randomBetweenMinAndMax = Math.random() * (max - min) + min;
+
+---------------------------------
+
+var agentList = ['001', '005', '007', '009'];
+
+if (agentList.indexOf(007) > -1) {
+  console.log(agentInQuestion + ' found in agent list');
+}
+
+I wanted to know if 007 is the array, so that's how you find it
+
+
+-----------------------------------
+
+for (var num = 1; num <= 5; num++) {
+  console.log(num);
+}
+
+
+while (/*test condition*/) {
+  /* specified statement */
+}
+
+for (/*initialization*/ ; /*condition*/ ; /*final-expression*/ ) {
+  /* statement */
+}
+
+for ( /*variable*/ in /*object*/ ) {
+  /* statement */
+}
+
+
+---------------------------------------
+
+function nameOfFunction(/*list of parameters*/) {
+  /*statements that define the function*/
+}
+
+//calling the function (test)
+var result = nameOfFunction(/*list of arguments*/);
+console.log(result);
+
+---------------------------------------
+// this function has one simple operation: it returns 1
+function returnOne() {
+  return 1;
+}
+
+// this part is similar to what happens when you click 'Run Tests'
+var result = returnOne();
+console.log(result); // should log 1 to the console
+
+
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
