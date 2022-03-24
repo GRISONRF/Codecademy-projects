@@ -454,11 +454,13 @@ const menu = {
     this._courses.desserts = desserts;
   },
   get _courses() {
-    return {
+    return {     //RangeError: Maximum call stack size exceeded ---- i dont know why
       appetizers: this.appetizers,
       mains: this.mains,
       desserts: this.desserts
     };
+
+   
   },
   addDishToCourse(courseName, dishName, dishPrice) {
     const dish = {
@@ -476,7 +478,7 @@ const menu = {
     const appetizer = this.getRandomDishFromCourse('appetizers');
     const main = this.getRandomDishFromCourse('mains');
     const dessert = this.getRandomDishFromCourse('desserts');
-    const totalPrice = appetizer.price + mains.price + desserts.price;
+    const totalPrice = appetizer.price + main.price + dessert.price;
     return `Your course is: ${appetizer.name} for an appetizer, ${main.name} for main plate and ${dessert.name} for dessert.Your total is ${totalPrice}.`;
   }
 };
