@@ -519,10 +519,10 @@
     opponentPoints: 27
   }
   ],
-  get _players() {
+  get players() {
     return this._players
   },
-  get _games(){
+  get games(){
     return this._games
   },
   addPlayer(firstName, lastName, age) {
