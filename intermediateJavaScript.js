@@ -148,3 +148,16 @@
 
 // console.log(alSmith.sportsTeam);
 
+/*************
+ * PROJECT 3 *
+ *************/
+
+
+//I had to create a new file which is messageMixer-project, since this project needs more than 1 file to execute.
+
+
+/*************
+ * PROJECT 4 *
+ *************/
+
+//I had to create a new file which is workAroundModule, since this project needs more than 1 file to execute.
