@@ -426,118 +426,118 @@
  PROJECT 11
  *********/
 
-// const menu = {
-//   _courses: { 
-//     appetizers:[], 
-//     mains:[], 
-//     desserts:[] 
-//     },
+const menu = {
+  _courses: { 
+    appetizers:[], 
+    mains:[], 
+    desserts:[] 
+    },
 
-//   get appetizers(){
-//     return this._courses.apperizers;
-//   },
-//   set appetizers(appetizers){
-//     this._courses.appetizers = appetizers;
-//   },
+  get appetizers(){
+    return this._courses.apperizers;
+  },
+  set appetizers(appetizers){
+    this._courses.appetizers = appetizers;
+  },
 
-//   get mains(){
-//     return this._course.mains;
-//   },
-//   set mains(mains){
-//     this._course.mains = mains;
-//   },
+  get mains(){
+    return this._course.mains;
+  },
+  set mains(mains){
+    this._course.mains = mains;
+  },
 
-//   get desserts(){
-//     return this._courses.desserts;
-//   },
-//   set desserts(desserts){
-//     this._courses.desserts = desserts;
-//   },
-//   get _courses() {
-//     return {     //RangeError: Maximum call stack size exceeded ---- i dont know why
-//       appetizers: this.appetizers,
-//       mains: this.mains,
-//       desserts: this.desserts
-//     };
+  get desserts(){
+    return this._courses.desserts;
+  },
+  set desserts(desserts){
+    this._courses.desserts = desserts;
+  },
+  get courses() {
+    return {     //RangeError: Maximum call stack size exceeded ---- i dont know why
+      appetizers: this.appetizers,
+      mains: this.mains,
+      desserts: this.desserts
+    };
 
    
-//   },
-//   addDishToCourse(courseName, dishName, dishPrice) {
-//     const dish = {
-//       name: this.dishName,
-//       price: this.dishPrice
-//     };
-//     return this._courses[courseName].push(dish);
-//   },
-//   getRandomDishFromCourse: function (courseName) {
-//     const dishes = this._courses[courseName];
-//     const index = Math.floor(Math.random() * dishes.length)
-//     return dishes[index];
-//   },
-//   generateRandomMeal(){
-//     const appetizer = this.getRandomDishFromCourse('appetizers');
-//     const main = this.getRandomDishFromCourse('mains');
-//     const dessert = this.getRandomDishFromCourse('desserts');
-//     const totalPrice = appetizer.price + main.price + dessert.price;
-//     return `Your course is: ${appetizer.name} for an appetizer, ${main.name} for main plate and ${dessert.name} for dessert.Your total is ${totalPrice}.`;
-//   }
-// };
+  },
+  addDishToCourse(courseName, dishName, dishPrice) {
+    const dish = {
+      name: this.dishName,
+      price: this.dishPrice
+    };
+    return this._courses[courseName].push(dish);
+  },
+  getRandomDishFromCourse: function (courseName) {
+    const dishes = this._courses[courseName];
+    const index = Math.floor(Math.random() * dishes.length)
+    return dishes[index];
+  },
+  generateRandomMeal(){
+    const appetizer = this.getRandomDishFromCourse('appetizers');
+    const main = this.getRandomDishFromCourse('mains');
+    const dessert = this.getRandomDishFromCourse('desserts');
+    const totalPrice = appetizer.price + main.price + dessert.price;
+    return `Your course is: ${appetizer.name} for an appetizer, ${main.name} for main plate and ${dessert.name} for dessert.Your total is ${totalPrice}.`;
+  }
+};
 
 
-// menu.addDishToCourse('appetizers', 'tatertots', 4.44);
-// menu.addDishToCourse('appetizers', 'chicken wings', 7.00);
-// menu.addDishToCourse('appetizers', 'salad', 6.50);
+menu.addDishToCourse('appetizers', 'tatertots', 4.44);
+menu.addDishToCourse('appetizers', 'chicken wings', 7.00);
+menu.addDishToCourse('appetizers', 'salad', 6.50);
 
-// menu.addDishToCourse('mains', 'feijoada', 30.33);
-// menu.addDishToCourse('mains', 'lazanha', 25.00);
-// menu.addDishToCourse('mains', 'strogonoff', 18.90);
+menu.addDishToCourse('mains', 'feijoada', 30.33);
+menu.addDishToCourse('mains', 'lazanha', 25.00);
+menu.addDishToCourse('mains', 'strogonoff', 18.90);
 
-// menu.addDishToCourse('desserts', 'brigadeiro', 3.50);
-// menu.addDishToCourse('desserts', 'bolo', 5.00);
-// menu.addDishToCourse('desserts', 'pudim', 4.75);
+menu.addDishToCourse('desserts', 'brigadeiro', 3.50);
+menu.addDishToCourse('desserts', 'bolo', 5.00);
+menu.addDishToCourse('desserts', 'pudim', 4.75);
 
-// const meal = menu.generateRandomMeal();
-// console.log(meal)
+const meal = menu.generateRandomMeal();
+console.log(meal)
 
 
 /**************
  PROJECT 12
  *************/
 
- const team = {
-  _players: [ 
-    {
-    firstName: 'Pedro',
-    lastName: 'Silva',
-    age: 20
-  } 
-  ],
-  _games: [ 
-    {
-    opponent: 'Broncos',
-    teamPoints: 42,
-    opponentPoints: 27
-  }
-  ],
-  get players() {
-    return this._players
-  },
-  get games(){
-    return this._games
-  },
-  addPlayer(firstName, lastName, age) {
-    let player = {
-      firstName: firstName,
-      lastName: lastName,
-      age: age,
-    };
+//  const team = {
+//   _players: [ 
+//     {
+//     firstName: 'Pedro',
+//     lastName: 'Silva',
+//     age: 20
+//   } 
+//   ],
+//   _games: [ 
+//     {
+//     opponent: 'Broncos',
+//     teamPoints: 42,
+//     opponentPoints: 27
+//   }
+//   ],
+//   get players() {
+//     return this._players
+//   },
+//   get games(){
+//     return this._games
+//   },
+//   addPlayer(firstName, lastName, age) {
+//     let player = {
+//       firstName: firstName,
+//       lastName: lastName,
+//       age: age,
+//     };
     
-    this._players.push(player);
-  },
- };
+//     this._players.push(player);
+//   },
+//  };
 
-let steph = ('Steph', 'Curry', 28);
-let lisa = ('Lisa', 'Leslie', 44);
-let bugs = ('Bugs', 'Bunny', 76);
+// let steph = ('Steph', 'Curry', 28);
+// let lisa = ('Lisa', 'Leslie', 44);
+// let bugs = ('Bugs', 'Bunny', 76);
 
-console.log(team.addPlayer(steph))
+// console.log(team.addPlayer(steph))
